@@ -760,9 +760,7 @@ function renderDetail(id) {
   let diff = '';
   if (it.myPrice != null && it.onlinePrice != null && it.myPrice !== it.onlinePrice) {
     const d = it.onlinePrice - it.myPrice;
-    diff = d > 0
-      ? `<div class="diff cheaper">발견 가격이 ${won(d)} 더 싸요</div>`
-      : `<div class="diff pricier">온라인이 ${won(-d)} 더 싸요</div>`;
+    diff = d > 0 ? `발견 가격이 ${won(d)} 더 싸요` : `온라인이 ${won(-d)} 더 싸요`;
   }
   const where = [it.place, it.shop].filter(Boolean).join(' ');
   const photos = itemPhotos(it);
@@ -810,7 +808,7 @@ function renderDetail(id) {
         <div><span>내가 본 가격</span><b>${wonA(it.myPrice)}</b></div>
         <div><span>온라인 가격${it.onlineMall ? ` · ${esc(it.onlineMall)}` : ''}</span><b class="sub">${wonA(it.onlinePrice)}</b>
           ${safeUrl(it.onlineLink) ? `<a href="${esc(safeUrl(it.onlineLink))}" target="_blank" rel="noopener noreferrer">판매 페이지 ↗</a>` : ''}</div>
-        ${diff ? `<p class="dt-diff">${diff.replace(/<[^>]+>/g, '')}</p>` : ''}
+        ${diff ? `<p class="dt-diff">${esc(diff)}</p>` : ''}
       </section>
 
       <section class="dt-card dt-rows">
