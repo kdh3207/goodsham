@@ -3,7 +3,7 @@
 'use strict';
 
 const THEME_DEFAULT = {
-  id: 'theme', palette: 'pink',
+  id: 'theme', palette: 'mint',
   bgImage: null, bgX: 50, bgY: 50, bgZoom: 1, dim: 0.55, blur: 0,
   fxOn: false, fx: 'snow',
 };

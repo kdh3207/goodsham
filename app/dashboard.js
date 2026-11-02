@@ -20,7 +20,7 @@ function bottomNavHTML(active) {
       </a>
       <a href="#/new" class="nav-add" aria-label="굿즈 추가">＋</a>
       <a href="#/wish" class="${active === 'wish' ? 'on' : ''}">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>굿즈함
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="16" rx="2.5"/><path d="M4.5 9h15M4.5 14.5h15M10.5 6.3h3M10.5 11.8h3M10.5 17.2h3M7 19.5v1.5M17 19.5v1.5"/></svg>굿즈함
       </a>
     </nav>`;
 }
