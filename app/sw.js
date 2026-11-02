@@ -1,5 +1,5 @@
 // 앱 화면 파일 캐시: 네트워크 우선, 오프라인이면 캐시 사용. /api 는 캐시하지 않는다.
-const CACHE = 'goods-wish-v26';
+const CACHE = 'goods-wish-v27';
 const SHELL = ['./', 'index.html', 'style.css', 'db.js', 'app.js', 'dashboard.js', 'share.js', 'theme.js', 'manifest.webmanifest', 'icons/icon-192.png'];
 
 self.addEventListener('install', (e) => {
