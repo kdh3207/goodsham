@@ -5,6 +5,7 @@
 !/.github/
 !/.gitignore
 !/SECURITY.md
+!/README.md
 config.json
 *.key
 *.pem
