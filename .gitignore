@@ -1,0 +1,12 @@
+# 올리는 건 앱 화면(app)과 GitHub 설정뿐. 나머지는 전부 제외한다.
+# 특히 config.json 에는 API 키가 들어 있어서 절대 올라가면 안 된다.
+/*
+!/app/
+!/.github/
+!/.gitignore
+!/SECURITY.md
+config.json
+*.key
+*.pem
+.env*
+__pycache__/

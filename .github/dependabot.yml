@@ -1,0 +1,7 @@
+# GitHub Dependabot: 위 두 작업(CodeQL · Pages)이 쓰는 도구에 보안 업데이트가 나오면 자동으로 알려 준다
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
